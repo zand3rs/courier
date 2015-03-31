@@ -24,7 +24,7 @@ function Courier(id) {
   Object.defineProperty(this, "cache", {
     get: function() {
       if (!cache) {
-        cache = new Memori({prefix: "bosh:"});
+        cache = new Memori({prefix: "courier:"});
       }
       return cache;
     }
